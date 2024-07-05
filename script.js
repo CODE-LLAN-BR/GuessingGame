@@ -4,6 +4,12 @@ const screen1 = document
 const screen2 = document
 .querySelector('.screen2')
 
+const btnTry = document
+.querySelector('#btnTry')
+
+const btnReset = document
+.querySelector('#btnReset')
+
 
 const randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
@@ -29,9 +35,6 @@ function handleTryClick(event) {
 
 
 //Eventos
-const btnTry = document.querySelector('#btnTry')
-
-const btnReset = document.querySelector('#btnReset')
 
 
 btnTry.addEventListener('click',handleTryClick)
@@ -40,7 +43,7 @@ btnReset.addEventListener('click',function(){
   
   location.reload()
 
-  
+
   // screen1.classList.remove('hide')
   // screen2.classList.add('hide')
   
